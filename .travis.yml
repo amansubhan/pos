@@ -1,0 +1,22 @@
+os: linux
+language: node_js
+node_js:
+   - '12'
+
+branches:
+   only:
+      - master
+
+before_script:
+   - npm install -g @angular/cli
+   - npm install
+
+script:
+   - ng build --prod
+
+deploy:
+  provider: pages:git
+  cleanup: false
+  keep_history: true
+  token: $GITHUB_TOKEN
+  edge: true
