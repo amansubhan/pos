@@ -13,10 +13,10 @@ before_script:
 
 script:
    - ng build --prod
+
 deploy:
-  provider: pages
+  provider: pages:git
   cleanup: false
-  github_token: "453fa124c4032cd2b3c4e4119cf2ddc7100248ab"
   keep_history: true
-  on:
-    branch: master
+  token: $GITHUB_TOKEN
+  edge: true
