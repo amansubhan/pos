@@ -25,5 +25,19 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "pos_api",
+      "urls": [
+        "https://angpos-api.herokuapp.com/"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 5,
+        "maxAge": "1d",
+        "timeout": "3s"
+      }
+    }
   ]
 }
