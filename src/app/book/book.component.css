@@ -1,14 +1,6 @@
-article {
-    padding: 1rem;
-    margin: 1rem auto;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Oswald', sans-serif;
-    width: 30rem;
-    max-width: 80%;
-  }
-  
-  h1 {
-    font-family: inherit;
-    font-weight: bold;
-  }
-  
+.mat-card {
+    padding: 30px;
+    margin-bottom: 30px;
+    min-width: 350px;
+    background-color: lightblue;
+}
